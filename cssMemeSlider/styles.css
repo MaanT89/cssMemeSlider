@@ -1,4 +1,4 @@
-.sldier {
+.slider {
     position: relative;
     max-width: 800px;
     overflow: hidden;
@@ -12,20 +12,26 @@
     transition: all 1s;
 }
 
+.slider_line img {
+    max-width: 800px;
+    height: 800px;
+}
+
 .slider_wrapper {
     display: flex;
-    column-gap: 10px;
+    justify-content: center;
+    /* column-gap: 10px;
     position: absolute;
     bottom: 5%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%); */
 }
 
 .slider_dot {
     width: 16px;
     height: 16px;
     border-radius: 50%;
-    border: 1px solid gray;
+    border: 1px solid black;
 }
 
 .slider_dot:hover {
