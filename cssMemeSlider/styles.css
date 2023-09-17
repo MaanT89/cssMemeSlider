@@ -1,0 +1,37 @@
+.sldier {
+    position: relative;
+    max-width: 800px;
+    overflow: hidden;
+    margin: 0 20px;
+}
+
+.slider_line {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    transition: all 1s;
+}
+
+.slider_wrapper {
+    display: flex;
+    column-gap: 10px;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.slider_dot {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 1px solid gray;
+}
+
+.slider_dot:hover {
+    background-color: orangered;
+}
+
+.active-dot {
+    background-color: orangered;
+}
