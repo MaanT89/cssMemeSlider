@@ -1,8 +1,8 @@
 .slider {
     position: relative;
-    max-width: 800px;
+    max-width: 600px;
     overflow: hidden;
-    margin: 0 20px;
+    margin: 0 auto
 }
 
 .slider_line {
@@ -14,12 +14,19 @@
 
 .slider_line img {
     max-width: 800px;
-    height: 800px;
+    max-height: 800px;
+}
+
+.text {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 16px;
 }
 
 .slider_wrapper {
     display: flex;
     justify-content: center;
+    margin-top: 10px;
     /* column-gap: 10px;
     position: absolute;
     bottom: 5%;

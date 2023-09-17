@@ -5,12 +5,14 @@ let sliderDots = document.querySelectorAll('.slider_dot');
 let sliderCount = 0;
 let sliderWidth;
 
+let text = document.querySelector('.text');
+
 window.addEventListener('resize', showSlide);
 
 function showSlide() {
     sliderWidth = document.querySelector('.slider').offsetWidth;
-    sliderLine.getElementsByClassName.width = sliderWidth * sliderImages.length + 'px';
-    sliderImages.forEach(item => item.getElementsByClassName.width = sliderWidth + 'px');
+    sliderLine.style.width = sliderWidth * sliderImages.length + 'px';
+    sliderImages.forEach(item => item.style.width = sliderWidth + 'px');
 
     rollSlider();
 }
@@ -30,5 +32,16 @@ sliderDots.forEach((dot, index) => {
         sliderCount = index;
         rollSlider();
         thisSlide(sliderCount);
+        changeText();
     })
 })
+
+function changeText() {
+    if (sliderCount == 1) {
+        text.textContent = 'Листай дальше';
+    } else if (sliderCount == 2) {
+        text.textContent = 'Еще дальше';
+    } else if (sliderCount == 3) {
+        text.textContent = 'Готово хозяин:)';
+    }
+}
